@@ -1,0 +1,5 @@
+XHTML renderer which produces lists without div\'s in.
+Used mostly for producing dropdown menus from dokuwiki pages
+
+http://www.dokuwiki.org/plugin:plainlists
+
