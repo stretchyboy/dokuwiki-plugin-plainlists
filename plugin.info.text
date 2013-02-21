@@ -1,0 +1,7 @@
+base plainlists
+author Martyn Eggleton
+email martyn.eggleton@gmail.com
+date 2013-02-21
+name PlainLists plugin
+desc XHTML renderer that does not adds div to li
+url http://www.dokuwiki.org/plugin:plainlists
