@@ -35,7 +35,7 @@ class renderer_plugin_plainlists extends Doku_Renderer_xhtml {
     }
 
     function listcontent_close() {
-	$this->doc .= DOKU_LF;
+       $this->doc .= DOKU_LF;
     }
     
     function reset() {
@@ -45,5 +45,12 @@ class renderer_plugin_plainlists extends Doku_Renderer_xhtml {
        $this->store = '';
        $this->_counter = array();
     }
+    
+    function internallink($id, $name = NULL, $search=NULL,$returnonly=false,$linktype='content') {
+      $text = parent::internallink($id, $name, $search, true, $linktype);
+      $text = preg_replace('/ class="[^"]+"/', '', $text);
+      $this->doc .= $text;
+    }
+        
 }
 
